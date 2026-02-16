@@ -13,8 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Latent Supply",
-  description: "Parent company for innovative brands",
+  title: "Latent Supply — Product Studio",
+  description:
+    "Latent Supply is a product studio building applications and experiences at the edge of what new technology makes possible.",
+  openGraph: {
+    title: "Latent Supply",
+    description:
+      "A product studio building applications and experiences at the edge of what new technology makes possible.",
+    type: "website",
+    siteName: "Latent Supply",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +31,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light" style={{ colorScheme: "light" }}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches);document.documentElement.classList.add(d?'dark':'light');document.documentElement.style.colorScheme=d?'dark':'light'}catch(e){}})()`,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Latent Supply Pty Ltd",
+              url: "https://latentsupply.com",
+              email: "admin@latentsupply.com",
+              description:
+                "A product studio building applications and experiences at the edge of what new technology makes possible.",
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
