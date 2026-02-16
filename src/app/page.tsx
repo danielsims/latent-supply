@@ -29,7 +29,7 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="relative min-h-[50svh] flex flex-col justify-end px-6 pb-24 pt-24 overflow-hidden">
+      <section className="relative min-h-[75vh] flex flex-col justify-end px-6 pb-24 pt-28 overflow-hidden">
         <div className="max-w-5xl mx-auto w-full relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 md:items-end">
             <h1 className="text-7xl sm:text-8xl md:text-[7rem] lg:text-[9rem] font-extralight tracking-tight uppercase leading-[0.85] text-neutral-900 dark:text-white">
