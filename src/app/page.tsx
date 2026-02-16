@@ -1,6 +1,6 @@
 import { Reveal, ScrollReveal } from "@/components/motion";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { Smartphone, Globe, Terminal } from "lucide-react";
+import { Smartphone, Globe, Terminal, Infinity } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,7 +12,8 @@ export default function Home() {
           delay={0.1}
           className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between"
         >
-          <span className="text-xs font-medium tracking-[0.15em] uppercase text-neutral-900 dark:text-neutral-100">
+          <span className="text-xs font-medium tracking-[0.15em] uppercase text-neutral-900 dark:text-neutral-100 flex items-center gap-1.5">
+            <Infinity className="w-4 h-4" strokeWidth={2} />
             Latent Supply
           </span>
           <div className="flex items-center gap-4">
@@ -28,7 +29,7 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <section className="relative min-h-[70svh] flex flex-col justify-end px-6 pb-24 pt-32 overflow-hidden">
+      <section className="relative min-h-[50svh] flex flex-col justify-end px-6 pb-24 pt-24 overflow-hidden">
         <div className="max-w-5xl mx-auto w-full relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 md:items-end">
             <h1 className="text-7xl sm:text-8xl md:text-[7rem] lg:text-[9rem] font-extralight tracking-tight uppercase leading-[0.85] text-neutral-900 dark:text-white">
