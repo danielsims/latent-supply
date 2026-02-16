@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <main className="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 selection:bg-neutral-900 selection:text-white dark:selection:bg-white dark:selection:text-neutral-900">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-xl">
+      <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-neutral-950/80 backdrop-blur-xl px-6">
         <Reveal
           variant="fade"
           delay={0.1}
-          className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between"
+          className="max-w-5xl mx-auto h-14 flex items-center justify-between"
         >
           <span className="text-xs font-medium tracking-[0.15em] uppercase text-neutral-900 dark:text-neutral-100 flex items-center gap-1.5">
             <Infinity className="w-4 h-4" strokeWidth={2} />
