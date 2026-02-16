@@ -1,6 +1,7 @@
 import { Reveal, ScrollReveal } from "@/components/motion";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Smartphone, Globe, Terminal, Infinity } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -234,7 +235,19 @@ export default function Home() {
                   ABN 38 694 551 490
                 </p>
               </div>
-              <div className="text-xs font-light text-neutral-300 dark:text-neutral-600">
+              <div className="flex items-center gap-4 text-xs font-light text-neutral-300 dark:text-neutral-600">
+                <Link
+                  href="/terms"
+                  className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-300"
+                >
+                  Terms
+                </Link>
+                <Link
+                  href="/privacy"
+                  className="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-300"
+                >
+                  Privacy
+                </Link>
                 <span>&copy; {new Date().getFullYear()} Latent Supply</span>
               </div>
             </div>
